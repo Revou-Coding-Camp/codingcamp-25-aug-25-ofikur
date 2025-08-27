@@ -165,6 +165,10 @@ main section:last-child {
     background-color: var(--secondary-gray);
     text-align: center;
 }
+
+#headquarters h2 {
+    text-align: left;
+}
 .city-container {
     display: flex;
     justify-content: space-around;
@@ -203,8 +207,13 @@ main section:last-child {
     gap: 30px;
     margin-top: 20px;
 }
+
 #message-form {
     flex: 1.2;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 30px;
+    box-shadow: 0 4px 15px var(--shadow-color);
 }
 .form-output {
     flex: 1;
@@ -212,7 +221,8 @@ main section:last-child {
     padding: 24px;
     height: fit-content;
     background-color: var(--secondary-gray);
-    border-radius: 4px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px var(--shadow-color);
 }
 .form-group {
     margin-bottom: 20px;
@@ -497,6 +507,9 @@ footer p {
     }
 
     /* Headquarters Section */
+    #headquarters h2 {
+        text-align: center;
+    }
     .city-container {
         flex-direction: column;
         align-items: center;
@@ -508,8 +521,14 @@ footer p {
     }
 
     /* Message Us Section */
+    #message-us h2 {
+        text-align: center;
+    }
     .form-section {
         flex-direction: column;
+    }
+    #message-form {
+        padding: 20px;
     }
 
     /* Profile Page */

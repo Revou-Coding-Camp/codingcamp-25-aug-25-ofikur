@@ -1,3 +1,4 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
 document.addEventListener('DOMContentLoaded', function() {
 
     // --- MODAL INPUT NAMA ---
