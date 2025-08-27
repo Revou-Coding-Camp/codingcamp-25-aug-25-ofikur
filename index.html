@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="image/favicon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="image/Logo-RevoU.png" alt="Company Logo" class="logo-img">
+                <span class="logo-text">My Website</span>
+            </div>
+            <button class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="profile.html">Our Profile</a></li>
+                <li><a href="https://ofikur.vercel.app">Portfolio</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome" class="container">
+            <div class="welcome-text">
+                <h2>Hi <span id="welcome-name"></span>, Welcome To Website</h2>
+                <p>Ini adalah website latihan pertama</p>
+            </div>
+            <div class="welcome-placeholder">
+                <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop" alt="Modern office workspace">
+            </div>
+        </section>
+
+        <section id="headquarters">
+            <div class="container">
+                <h2>Our Headquarter</h2>
+                <div class="city-container">
+                    <div class="city-item">
+                        <div class="city-circle" style="background-image: url('image/jakarta.jpg');"></div>
+                        <p>Jakarta</p>
+                    </div>
+                    <div class="city-item">
+                        <div class="city-circle" style="background-image: url('image/bandung.jpg');"></div>
+                        <p>Bandung</p>
+                    </div>
+                    <div class="city-item">
+                        <div class="city-circle" style="background-image: url('image/surabaya.jpg');"></div>
+                        <p>Surabaya</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-us">
+             <div class="container">
+                <h2>Message Us</h2>
+                <div class="form-section">
+                    <form id="message-form">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tanggal-lahir">Tanggal Lahir</label>
+                            <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Jenis Kelamin</label>
+                            <div class="radio-group">
+                                <input type="radio" id="laki-laki" name="gender" value="Laki-laki" required>
+                                <label for="laki-laki">Laki-laki</label>
+                                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div class="form-output">
+                        <p><strong>Current Time :</strong> <span id="output-time"></span></p>
+                        <p><strong>Nama :</strong> <span id="output-name"></span></p>
+                        <p><strong>Tanggal Lahir :</strong> <span id="output-dob"></span></p>
+                        <p><strong>Jenis Kelamin :</strong> <span id="output-gender"></span></p>
+                        <p><strong>Pesan :</strong> <span id="output-message"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created By Ofikur R. - 27 Agustus 2025</p>
+    </footer>
+
+    <div id="name-modal-overlay">
+        <div id="name-modal">
+            <h3>Welcome to My Website!</h3>
+            <p>Please enter your name to continue.</p>
+            <input type="text" id="modal-name-input" placeholder="Your Name" value="Ofikur">
+            <button id="modal-submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
