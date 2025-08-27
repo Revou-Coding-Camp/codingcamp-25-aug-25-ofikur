@@ -1,12 +1,12 @@
 /* General Styling */
 :root {
-    --primary-blue: #0A2540; /* Deep navy for headings and accents */
-    --secondary-gray: #F6F9FC; /* Light gray for backgrounds */
-    --text-color: #525F7F; /* Soft gray for body text */
+    --primary-blue: #0A2540;
+    --secondary-gray: #F6F9FC;
+    --text-color: #525F7F;
     --border-color: #E6E6E6;
     --yellow-accent: #FFC107;
     --white-color: #FFFFFF;
-    --shadow-color: rgba(10, 37, 64, 0.05); /* Very subtle shadow */
+    --shadow-color: rgba(10, 37, 64, 0.05);
 }
 
 * {
@@ -347,7 +347,7 @@ footer p {
     width: 100%;
     height: 100%;
     background-color: rgba(10, 37, 64, 0.7);
-    display: none; /* Defaultnya disembunyikan */
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -541,7 +541,6 @@ footer p {
         height: 200px;
     }
     
-    /* Lebar menu bisa disesuaikan lagi untuk layar yang lebih kecil */
     nav ul {
         width: 80%;
     }
