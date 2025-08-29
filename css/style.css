@@ -4,13 +4,12 @@
 /* Reset and Base Styles */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; overflow-x: hidden; }
-body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--white-color); overflow-x: hidden; }
+body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--white-color); overflow-x: hidden; padding-top: 72px; }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 h2 { font-size: 28px; font-weight: 600; color: var(--primary-blue); margin-bottom: 24px; }
 
-
 /* Header and Navigation */
-header { background-color: var(--white-color); border-bottom: 1px solid var(--border-color); padding: 16px 0; position: sticky; top: 0; z-index: 999; }
+header { background-color: var(--white-color); border-bottom: 1px solid var(--border-color); padding: 16px 0; position: fixed; top: 0; width: 100%; z-index: 999; }
 header .container { display: flex; justify-content: space-between; align-items: center; }
 .logo { display: flex; align-items: center; font-weight: 600; font-size: 18px; color: var(--primary-blue); }
 .logo-img { height: 40px; margin-right: 12px; }
@@ -23,11 +22,9 @@ nav ul li a.active { background-color: var(--primary-blue); color: var(--white-c
 .hamburger-menu { display: none; background: none; border: none; cursor: pointer; padding: 0; z-index: 1010; }
 .hamburger-menu .bar { display: block; width: 25px; height: 3px; margin: 5px auto; background-color: var(--primary-blue); transition: all 0.3s ease-in-out; }
 
-
 /* Main Content & Sections */
 main section { padding: 80px 0; border-bottom: 1px solid var(--border-color); }
 main section:last-child { border-bottom: none; }
-
 
 /* Welcome Section */
 #welcome.container { display: flex; align-items: center; gap: 40px; padding-top: 80px; padding-bottom: 80px; }
@@ -45,7 +42,6 @@ main section:last-child { border-bottom: none; }
 .city-circle:hover { transform: scale(1.05); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
 .city-item p { font-weight: 600; color: var(--primary-blue); }
 
-
 /* Message Us Section */
 .form-section { display: flex; gap: 30px; margin-top: 20px; }
 #message-form { flex: 1.2; border: 1px solid var(--border-color); border-radius: 6px; padding: 30px; box-shadow: 0 4px 15px var(--shadow-color); }
@@ -61,7 +57,6 @@ button[type="submit"]:hover { background-color: #081c33; }
 .form-output p { margin-bottom: 12px; font-size: 14px; }
 .form-output span { color: var(--text-color); }
 
-
 /* Portfolio Section */
 .portfolio-container { display: flex; justify-content: space-between; gap: 30px; margin-top: 20px; }
 .portfolio-card { background-color: var(--white-color); border: 1px solid var(--border-color); border-radius: 6px; padding: 20px; box-shadow: 0 4px 15px var(--shadow-color); flex-basis: 31%; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; }
@@ -71,7 +66,6 @@ button[type="submit"]:hover { background-color: #081c33; }
 .portfolio-card p { font-size: 15px; margin-bottom: 20px; flex-grow: 1; }
 .portfolio-btn { display: inline-block; padding: 10px 15px; background-color: var(--primary-blue); color: var(--white-color); text-decoration: none; border-radius: 4px; text-align: center; font-weight: 500; transition: background-color 0.2s; margin-top: auto; }
 .portfolio-btn:hover { background-color: #081c33; }
-
 
 /* Partners Section */
 #partners { background-color: var(--secondary-gray); }
@@ -85,7 +79,6 @@ button[type="submit"]:hover { background-color: #081c33; }
 .logo-track img:hover { filter: grayscale(0%); opacity: 1; }
 @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-250px * 7)); } }
 
-
 /* Name Input Modal Styling */
 #name-modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(10, 37, 64, 0.7); display: none; justify-content: center; align-items: center; z-index: 1000; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
 #name-modal { background: var(--white-color); padding: 30px 35px; border-radius: 8px; box-shadow: 0 5px 25px var(--shadow-color); width: 90%; max-width: 400px; text-align: center; animation: fadeIn 0.3s ease-out; }
@@ -96,7 +89,6 @@ button[type="submit"]:hover { background-color: #081c33; }
 #modal-name-input:focus { outline: none; border-color: var(--primary-blue); box-shadow: 0 0 0 3px rgba(10, 37, 64, 0.1); }
 #modal-submit-btn { width: 100%; padding: 12px; background-color: var(--primary-blue); color: var(--white-color); border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: 600; transition: background-color 0.2s; }
 #modal-submit-btn:hover { background-color: #081c33; }
-
 
 /* Footer */
 footer { background-color: var(--primary-blue); color: #a9b4c9; padding: 50px 0 0; border-top: none; }
@@ -120,7 +112,6 @@ footer { background-color: var(--primary-blue); color: #a9b4c9; padding: 50px 0 
 .social-icons a:hover i { color: var(--white-color); }
 .footer-bottom { border-top: 1px solid #2c4a6b; text-align: center; padding: 20px 0; }
 .footer-bottom p { font-size: 14px; color: #a9b4c9; }
-
 
 /* Services and Testimonials Section */
 .section-title { text-align: center; margin-bottom: 15px; }
@@ -166,7 +157,6 @@ footer { background-color: var(--primary-blue); color: #a9b4c9; padding: 50px 0 
 .value-icon { font-size: 36px; color: var(--primary-blue); margin-bottom: 15px; }
 .value-item h4 { font-size: 18px; color: var(--primary-blue); margin-bottom: 8px; }
 .value-item p { font-size: 14px; color: var(--text-color); line-height: 1.6; }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
