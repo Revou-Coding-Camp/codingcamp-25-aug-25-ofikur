@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profile</title>
+    <title>NusantaraTech - Solusi Teknologi Inovatif</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
-    <link rel="manifest" href="image/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav class="container">
             <div class="logo">
-                <img src="image/Logo-RevoU.png" alt="Company Logo" class="logo-img">
-                <span class="logo-text">My Website</span>
+                <img src="img/NusantaraTech-logo.png" alt="Company Logo" class="logo-img">
+                <span class="logo-text">NusantaraTech</span>
             </div>
             <button class="hamburger-menu" id="hamburger-menu">
                 <div class="bar"></div>
@@ -28,7 +32,7 @@
             <ul id="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="profile.html">Our Profile</a></li>
-                <li><a href="https://ofikur.vercel.app">Portfolio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#message-us">Message Us</a></li>
             </ul>
         </nav>
@@ -37,39 +41,118 @@
     <main>
         <section id="welcome" class="container">
             <div class="welcome-text">
-                <h2>Hi <span id="welcome-name"></span>, Welcome To Website</h2>
-                <p>Ini adalah website latihan pertama</p>
+                <h2 data-aos="fade-right">Hi <span id="welcome-name"></span>, Welcome To NusantaraTech</h2>
+                <p data-aos="fade-right" data-aos-delay="200">Mendorong Inovasi Digital di Seluruh Nusantara.</p>
             </div>
-            <div class="welcome-placeholder">
+            <div class="welcome-placeholder" data-aos="fade-left">
                 <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop" alt="Modern office workspace">
             </div>
         </section>
 
         <section id="headquarters">
             <div class="container">
-                <h2>Our Headquarter</h2>
+                <h2 data-aos="fade-up">Our Headquarter</h2>
                 <div class="city-container">
-                    <div class="city-item">
-                        <div class="city-circle" style="background-image: url('image/jakarta.jpg');"></div>
+                    <div class="city-item" data-aos="zoom-in">
+                        <div class="city-circle" style="background-image: url('img/jakarta.jpg');"></div>
                         <p>Jakarta</p>
                     </div>
-                    <div class="city-item">
-                        <div class="city-circle" style="background-image: url('image/bandung.jpg');"></div>
+                    <div class="city-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="city-circle" style="background-image: url('img/bandung.jpg');"></div>
                         <p>Bandung</p>
                     </div>
-                    <div class="city-item">
-                        <div class="city-circle" style="background-image: url('image/surabaya.jpg');"></div>
+                    <div class="city-item" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="city-circle" style="background-image: url('img/surabaya.jpg');"></div>
                         <p>Surabaya</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Layanan Kami</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Kami menyediakan berbagai solusi teknologi terbaik untuk mendorong kesuksesan bisnis Anda.</p>
+                <div class="services-container">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <h3>Web Development</h3>
+                        <p>Membangun website yang cepat, responsif, dan modern untuk memenuhi kebutuhan bisnis Anda dari awal hingga akhir.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile App Development</h3>
+                        <p>Membuat aplikasi mobile inovatif untuk platform iOS dan Android yang memberikan pengalaman pengguna terbaik.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h3>Digital Marketing</h3>
+                        <p>Meningkatkan jangkauan pasar dan visibilitas brand Anda melalui strategi pemasaran digital yang efektif.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2 data-aos="fade-up">Portfolio</h2>
+                <div class="portfolio-container">
+                    <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Project 1 Image">
+                        <h3>Project Alpha</h3>
+                        <p>Deskripsi singkat mengenai Project Alpha. Fokus pada pengembangan dashboard analitik untuk visualisasi data.</p>
+                        <a href="#" class="portfolio-btn">Lihat Detail</a>
+                    </div>
+                    <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2070&auto=format&fit=crop" alt="Project 2 Image">
+                        <h3>Project Beta</h3>
+                        <p>Deskripsi singkat mengenai Project Beta. Sebuah platform kolaborasi tim yang dirancang untuk efisiensi kerja.</p>
+                        <a href="#" class="portfolio-btn">Lihat Detail</a>
+                    </div>
+                    <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop" alt="Project 3 Image">
+                        <h3>Project Gamma</h3>
+                        <p>Deskripsi singkat mengenai Project Gamma. Pengembangan website e-commerce dengan integrasi payment gateway.</p>
+                        <a href="#" class="portfolio-btn">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Apa Kata Klien Kami</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Kepuasan mereka adalah prioritas utama kami.</p>
+                <div class="testimonials-container">
+                    <div class="testimonial-card" data-aos="fade-right">
+                        <p class="testimonial-text">"Kerja sama yang luar biasa! Tim mereka sangat profesional, responsif, dan memberikan hasil yang melebihi ekspektasi. Website baru kami luar biasa!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="Client 1">
+                            <div class="author-info">
+                                <h4>Ahmad Maulana</h4>
+                                <span>CEO, TechCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" data-aos="fade-left" data-aos-delay="200">
+                        <p class="testimonial-text">"Prosesnya sangat mulus dan terorganisir. Mereka benar-benar memahami visi kami dan mengubahnya menjadi produk digital yang fantastis."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?img=2" alt="Client 2">
+                            <div class="author-info">
+                                <h4>Siti Hartati</h4>
+                                <span>Manager, CreativeWorks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section id="message-us">
             <div class="container">
-                <h2>Message Us</h2>
+                <h2 data-aos="fade-up">Message Us</h2>
                 <div class="form-section">
-                    <form id="message-form">
+                    <form id="message-form" data-aos="fade-right">
                         <div class="form-group">
                             <label for="nama">Nama</label>
                             <input type="text" id="nama" name="nama" placeholder="Masukkan nama anda" required>
@@ -93,7 +176,7 @@
                         </div>
                         <button type="submit">Submit</button>
                     </form>
-                    <div class="form-output">
+                    <div class="form-output" data-aos="fade-left" data-aos-delay="200">
                         <p><strong>Current Time :</strong> <span id="output-time"></span></p><br>
                         <p><strong>Nama :</strong> <span id="output-name"></span></p>
                         <p><strong>Tanggal Lahir :</strong> <span id="output-dob"></span></p>
@@ -103,21 +186,95 @@
                 </div>
             </div>
         </section>
+        
+        <section id="partners">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Our Partners</h2>
+                <div class="logo-slider">
+                    <div class="logo-track">
+                        <img src="img/logo/google.png" alt="Google">
+                        <img src="img/logo/meta.png" alt="Meta">
+                        <img src="img/logo/microsoft.png" alt="Microsoft">
+                        <img src="img/logo/apple.png" alt="Apple">
+                        <img src="img/logo/amazon.png" alt="Amazon">
+                        <img src="img/logo/netflix.png" alt="Netflix">
+                        <img src="img/logo/tesla.png" alt="Tesla">
+                        <img src="img/logo/google.png" alt="Google">
+                        <img src="img/logo/meta.png" alt="Meta">
+                        <img src="img/logo/microsoft.png" alt="Microsoft">
+                        <img src="img/logo/apple.png" alt="Apple">
+                        <img src="img/logo/amazon.png" alt="Amazon">
+                        <img src="img/logo/netflix.png" alt="Netflix">
+                        <img src="img/logo/tesla.png" alt="Tesla">
+                        <img src="img/logo/google.png" alt="Google">
+                        <img src="img/logo/meta.png" alt="Meta">
+                        <img src="img/logo/microsoft.png" alt="Microsoft">
+                        <img src="img/logo/apple.png" alt="Apple">
+                        <img src="img/logo/amazon.png" alt="Amazon">
+                        <img src="img/logo/netflix.png" alt="Netflix">
+                        <img src="img/logo/tesla.png" alt="Tesla">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Created By Ofikur R. - 27 Agustus 2025</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-about">
+                    <div class="logo">
+                        <img src="img/NusantaraTech-logo.png" alt="Company Logo" class="logo-img">
+                        <span class="logo-text">NusantaraTech</span>
+                    </div>
+                    <p class="about-text">
+                        NusantaraTech berkomitmen memberdayakan bisnis di seluruh Indonesia melalui solusi teknologi yang inovatif, terintegrasi, dan berkelanjutan.
+                    </p>
+                </div>
+                <div class="footer-column footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Our Profile</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#message-us">Message Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Jl. Teknologi No. 123,<br>Jakarta, Indonesia 12345</p>
+                    <p><strong>Phone:</strong> (021) 555-0123</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@nusantaratech.com">info@nusantaratech.com</a></p>
+                </div>
+                <div class="footer-column footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NusantaraTech. All Rights Reserved. | Created By Ofikur R.</p>
+            </div>
+        </div>
     </footer>
 
     <div id="name-modal-overlay">
         <div id="name-modal">
-            <h3>Welcome to My Website!</h3>
+            <h3>Welcome to NusantaraTech!</h3>
             <p>Please enter your name to continue.</p>
             <input type="text" id="modal-name-input" placeholder="Your Name">
             <button id="modal-submit-btn">Submit</button>
         </div>
     </div>
+    
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
