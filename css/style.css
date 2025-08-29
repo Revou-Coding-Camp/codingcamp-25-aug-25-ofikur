@@ -35,7 +35,8 @@ main section:last-child { border-bottom: none; }
 .welcome-placeholder img { width: 100%; height: 100%; object-fit: cover; }
 
 /* Headquarters Section */
-#headquarters { background-color: var(--secondary-gray); text-align: center; }
+#headquarters { background-color: var(--secondary-gray); }
+#headquarters h2, #portfolio h2 { text-align: left; }
 .city-container { display: flex; justify-content: space-around; margin-top: 30px; }
 .city-item { text-align: center; }
 .city-circle { width: 140px; height: 140px; border-radius: 50%; margin: 0 auto 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; background-size: cover; background-position: center; }
@@ -112,6 +113,8 @@ footer { background-color: var(--primary-blue); color: #a9b4c9; padding: 50px 0 
 .social-icons a:hover i { color: var(--white-color); }
 .footer-bottom { border-top: 1px solid #2c4a6b; text-align: center; padding: 20px 0; }
 .footer-bottom p { font-size: 14px; color: #a9b4c9; }
+.footer-bottom a { color: inherit; text-decoration: underline; transition: color 0.2s ease-in-out; }
+.footer-bottom a:hover { color: var(--white-color); }
 
 /* Services and Testimonials Section */
 .section-title { text-align: center; margin-bottom: 15px; }
@@ -175,7 +178,7 @@ footer { background-color: var(--primary-blue); color: #a9b4c9; padding: 50px 0 
     #welcome.container { flex-direction: column; text-align: center; gap: 25px; padding-top: 40px; padding-bottom: 40px; }
     .welcome-text h2 { font-size: 28px; }
     .welcome-placeholder { height: 250px; width: 100%; }
-    #headquarters h2 { text-align: center; }
+    #headquarters h2, #portfolio h2 { text-align: center; }
     .city-container { flex-direction: column; align-items: center; gap: 30px; }
     .city-circle { width: 120px; height: 120px; }
     #message-us h2 { text-align: center; }
