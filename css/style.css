@@ -4,7 +4,7 @@
 /* Reset and Base Styles */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--white-color); }
+body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--white-color); overflow-x: hidden; }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 h2 { font-size: 28px; font-weight: 600; color: var(--primary-blue); margin-bottom: 24px; }
 
