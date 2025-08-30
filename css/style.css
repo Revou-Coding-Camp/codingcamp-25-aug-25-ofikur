@@ -22,6 +22,12 @@ nav ul li a.active { background-color: var(--primary-blue); color: var(--white-c
 .hamburger-menu { display: none; background: none; border: none; cursor: pointer; padding: 0; z-index: 1010; }
 .hamburger-menu .bar { display: block; width: 25px; height: 3px; margin: 5px auto; background-color: var(--primary-blue); transition: all 0.3s ease-in-out; }
 
+/* Hamburger to X Animation */
+.hamburger-menu.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger-menu.active .bar:nth-child(2) { opacity: 0; }
+.hamburger-menu.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+
 /* Main Content & Sections */
 main section { padding: 80px 0; border-bottom: 1px solid var(--border-color); }
 main section:last-child { border-bottom: none; }
@@ -116,7 +122,7 @@ footer { background-color: var(--primary-blue); color: #a9b4c9; padding: 50px 0 
 .footer-bottom a { color: inherit; text-decoration: underline; transition: color 0.2s ease-in-out; }
 .footer-bottom a:hover { color: var(--white-color); }
 
-/* Services and Testimonials Section */
+/* Services Section */
 .section-title { text-align: center; margin-bottom: 15px; }
 .section-subtitle { text-align: center; max-width: 600px; margin: 0 auto 40px auto; color: #8898AA; font-size: 16px; }
 #services { background-color: var(--secondary-gray); }
@@ -125,6 +131,8 @@ footer { background-color: var(--primary-blue); color: #a9b4c9; padding: 50px 0 
 .service-card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(10, 37, 64, 0.1); }
 .service-icon { font-size: 40px; color: var(--primary-blue); margin-bottom: 20px; }
 .service-card h3 { font-size: 20px; color: var(--primary-blue); margin-bottom: 15px; }
+
+/* Testimonials Section */
 #testimonials { background-color: var(--white-color); }
 .testimonials-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
 .testimonial-card { background-color: var(--secondary-gray); border-left: 5px solid var(--primary-blue); border-radius: 8px; padding: 30px; flex-basis: 48%; }
@@ -149,6 +157,8 @@ footer { background-color: var(--primary-blue); color: #a9b4c9; padding: 50px 0 
 .profile-card h2 { margin-top: 0; }
 .profile-card ul { list-style-position: inside; padding-left: 5px; }
 .profile-card ul li { margin-bottom: 8px; }
+
+/* Vision & Mission Section */
 .vision-mission-card { padding: 0; background: none; border: none; box-shadow: none; }
 .vision-mission-container { display: flex; gap: 30px; flex-wrap: wrap; }
 .vision-column, .mission-column { background-color: var(--white-color); border: 1px solid var(--border-color); border-radius: 6px; padding: 30px; box-shadow: 0 4px 15px var(--shadow-color); }
@@ -156,6 +166,8 @@ footer { background-color: var(--primary-blue); color: #a9b4c9; padding: 50px 0 
 .mission-column { flex: 1.5; min-width: 300px; }
 .vision-mission-container h3 { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 600; color: var(--primary-blue); margin-top: 0; margin-bottom: 20px; }
 .vision-mission-container h3 i { color: var(--primary-blue); }
+
+/* Values Section */
 .values-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 20px; text-align: center; }
 .value-icon { font-size: 36px; color: var(--primary-blue); margin-bottom: 15px; }
 .value-item h4 { font-size: 18px; color: var(--primary-blue); margin-bottom: 8px; }

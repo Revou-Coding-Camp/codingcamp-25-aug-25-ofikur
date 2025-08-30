@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (hamburgerMenu && navLinks) {
         hamburgerMenu.addEventListener('click', () => {
             navLinks.classList.toggle('nav-active');
+            hamburgerMenu.classList.toggle('active');
         });
     }
 
